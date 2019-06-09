@@ -8,7 +8,7 @@
         Title="Rectangulo" Height="450"  Width="800">
     <StackPanel>
         <Label Content="Ingrese X1"/>
-        <TextBox Width="100" Height="15" Text="{Binding Path=X1, Mode=TwoWay}" />
+        <TextBox Width="100" Height="15" Text="{Binding Path=X1, Mode=TwoWay}" PreviewTextInput="NumberValidationTextBox" />
         <Label Content="Ingrese X2"/>
         <TextBox Width="100" Height="15" Text="{Binding Path=X2, Mode=TwoWay}" />
         <Label Content="Ingrese Y1" />
