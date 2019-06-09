@@ -1,0 +1,30 @@
+﻿<Window x:Class="Rectangulo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rectangulo"
+        mc:Ignorable="d"
+        Title="Rectangulo" Height="450"  Width="800">
+    <StackPanel>
+        <Label Content="Ingrese X1"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=PrimerNumero, Mode=TwoWay}" />
+        <Label Content="Ingrese X2"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=SegundoNumero, Mode=TwoWay}" />
+        <Label Content="Ingrese Y1" />
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Ingrese Y2"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Distancia"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Base"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Altura"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Perimetro"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+        <Label Content="Area"/>
+        <TextBox Width="100" Height="15" Text="{Binding Path=Resultado, Mode=TwoWay}" />
+
+    </StackPanel>
+</Window>
