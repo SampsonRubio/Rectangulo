@@ -25,7 +25,28 @@ namespace Rectangulo
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
-      
+
+        public string X1
+        {
+            get { return x1; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                bool distancia = int.TryParse(value, out numero);
+                bool bas = int.TryParse(value, out numero);
+                bool altura = int.TryParse(value, out numero);
+                bool perimetro = int.TryParse(value, out numero);
+                bool area = int.TryParse(value, out numero);
+                if (resultado && distancia && bas && altura && perimetro && area) x1 = value;
+                OnPropertyChanged("X1");
+                OnPropertyChanged("Distancia");
+                OnPropertyChanged("Base");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Perimetro");
+                OnPropertyChanged("Area");
+            }
+        }
 
 
     }
